@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+        
+        <!--Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Montserrat:ital,wght@0,300;0,800;1,200&display=swap" rel="stylesheet">
+        
+        
+        <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+        
+        <title>FCC:Product Landing Page</title>
+    
+    
+    </head>
+    
+    
+    
+    <style>
+    
+        header{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            background-color: #008000;
+            
+        }
+        
+        header .brand{
+            padding-left: 15px;
+            font-family: 'Montserrat';
+        }
+        
+        header .brand-name{
+            font-weight:900;
+            
+        }
+        
+        header .brand-moto{
+            font-weight: lighter;
+            font-size: 15px;
+            margin-top: -11px;
+        }
+        
+        .menu{
+            display: flex;
+            background-color:#006400;
+          padding-left: 400px;
+            font-family: 'Montserrat',sans-serif;
+                color:white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .ready-to-rent p{
+            font-family: 'Montserrat',sans-serif;
+            font-weight: bold;
+            font-size: 45px;
+            
+        }
+        .ready-to-rent{
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        
+        button{
+            background-color: green;
+            color: white;
+            border-radius: 10%;
+        }
+        
+        
+        #locations{
+           
+            background-image: linear-gradient(45deg,green 50%,white 50%);
+           color: black;
+            font-family: 'Montserrat',sans-serif;
+            
+        }
+        
+        
+        
+        #locations p{
+            font-family: 'Montserrat',sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+          
+        }
+        
+        #pricing{
+           background-color: #F8F8FF;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        #pricing p{
+            color: green;
+            font-size: 30px;
+            padding-top: 25px;
+        }
+        
+        .how-it-works{
+            background-image: linear-gradient(45deg,green 50%,darkgreen 50%);
+            font-family: 'Montserrat',sans-serif;
+        }
+        
+        .how-it-works p{
+            font-weight: bold;
+            color: white;
+            font-size: 45px;
+        }
+        
+        .how-it-works ol{
+            color: white;
+            font-size: 30px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        @media (max-width:600px)
+        {
+            .menu {
+        padding-left: 0px;
+            }
+        
+        }
+        
+        @media (max-width:768px)
+        {
+            
+            
+            .menu {
+            padding-left:5px; 
+            }
+        }
+        
+        @media (max-width:1025){
+            .menu{
+                padding-left: 10px;
+            }
+        }
+ 
+    
+
+    
+    </style>
+
+    
+   <header>
+    <i class="fas fa-car-side" style="font-size: 50px"></i>
+       <div class="brand">
+    <p class="brand-name">Taylor-Made Car Rentals<br></p> 
+       <p class="brand-moto">Finding the right fit for you.</p>
+       </div>
+  
+       
+    </header>
+    <body>
+        
+        <div class="menu" >
+        
+            <a href="#how-it-works"><p style="padding-right: 50px">How It Works</p></a>
+            <a href="#locations"><p style="padding-right: 50px">Locations</p></a>
+            <a href="#pricing"> <p style="padding-right: 50px">Products</p></a>
+     
+        </div>
+        
+        
+        
+        <div class="ready-to-rent">
+            
+            <p style="text-align: center"> Ready to Rent?</p>
+           
+            <input type="text" placeholder="Enter your email address">
+            
+            <button type="submit">Get started</button>
+         </div>
+        
+        
+        <div id="locations">
+            <div class="row">
+                <div class="col-sm">
+        <p style="color: white">Locations</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103471.27061565689!2d-86.49048894527587!3d35.86182074932014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8863f80e5b170141%3A0x850cb92ad6b577f6!2sMurfreesboro%2C%20TN!5e0!3m2!1sen!2sus!4v1590097928559!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-sm">
+                <p>Our middle Tennessee locations include:</p>
+                    <ul>
+                    <li>5868 Nowhere Drive, Murfreesboro, TN</li>
+                    <li>2345 CarRental Plaza, Franklin, TN</li>
+                    <li>9876 Beverly Hills, Nashville, TN<strong> NEW!</strong></li>
+                    </ul>
+                    
+                    
+                </div>
+                </div>
+        </div>
+        
+        
+        <!--New row -->
+        <div id="pricing">
+        <p style="font-weight: bold"> Choose a category: </p>
+        
+            <div class="row">
+                <div class="col-sm">
+            <img src="compact-car-image.jpg">
+            <p>Compact</p>
+                    <button type="button" data-toggle="modal" data-target="#CompactModal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="CompactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CompactModalLabel">Compact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>1 Large Bag</li>
+          <li>5 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+          
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+                
+                
+                <div class="col-sm">
+            <img src="midsize-sedan-image.jpg">
+            <p>Standard Sedan</p>
+              
+                    <button type="button" data-toggle="modal" data-target="#SedanModal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="SedanModal" tabindex="-1" role="dialog" aria-labelledby="SedanModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SedanModalLabel">Standard sedan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>1 Large Bag</li>
+          <li>5 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+            <li>23 mpg</li>
+          
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    
+                    
+                </div>
+                
+                
+                
+                
+            <div class="col-sm">
+            <img src="standard-suv-two.jpg">
+            <p>Standard SUV</p>
+                <button type="button" data-toggle="modal" data-target="#Standard-SUV-Modal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="Standard-SUV-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Standard-SUV-ModalLabel">Standard SUV</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>1 Large Bag</li>
+          <li>5 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+            <li>17 mpg</li>
+          
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                
+                
+                </div> 
+            </div> 
+            
+            <!--End of row-->
+            
+            <div class="row" style="padding-top: 40px;">
+            <div class="col-sm">
+                <img src="full-size-suv.jpg">
+                <p>Full-size SUV</p>
+                
+                <button type="button" data-toggle="modal" data-target="#CompactModal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="Full-Size-SUV-Modal" tabindex="-1" role="dialog" aria-labelledby="Full-Size-SUV-Label"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Full-Size-SUV-ModalLabel">Full Size SUV</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>2 Large Bags</li>
+          <li>7/8 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+          <li>15 mpg</li>
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                
+                </div>
+                
+                <div class="col-sm">
+                <img src="mini-van.jpg">
+                    <p>Minivan</p>
+                    
+                    <button type="button" data-toggle="modal" data-target="#MinivanModal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="MinivanModal" tabindex="-1" role="dialog" aria-labelledby="MinivanModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="MinivanModalLabel">Minivan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>2 Large Bag</li>
+          <li>7 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+          <li>17 mpg</li>
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    
+                </div>
+                
+                <div class="col-sm">
+                <img src="truck.jpg">
+                    <p>Full Size Pick Up</p>
+                    
+                    <button type="button" data-toggle="modal" data-target="#Pick-Up-Modal"> Quick Look</button>
+                    <!-- Modal -->
+<div class="modal fade" id="Pick-Up-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Pick-Up-ModalLabel">Compact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>5 Large Bags</li>
+          <li>5 seats</li>
+            <li>4 doors</li>
+            <li>A/C</li>
+          <li>15 mpg</li>
+          
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div id="how-it-works" class="how-it-works">
+    <p style="text-align: center">How it works</p>
+        <p style="font-size: 70px"> Easy as 1, 2, 3!</p>
+            <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>Sed ut libero maximus, fringilla augue sagittis, rhoncus purus.
+                </li>
+            <li>Vivamus tempor nibh eu massa porta eleifend.
+                
+</li>
+            
+            
+            
+            </ol>
+            
+        <button type="button" class="btn btn-dark-green">Get Started</button>
+        
+        
+        
+        
+        </div>
+        
+        
+        
+      
+        
+        
+    
+
+    
+    
+    </body>
+
+
+
+</html>
